@@ -12,7 +12,7 @@ DESTDIR = $$PWD/build/bin
 
 CONFIG += c++11
 
-TARGET = VideoTargetMark
+TARGET = VideoTargetMarkTool
 TEMPLATE = app
 
 DEFINES -= UNICODE
@@ -34,6 +34,7 @@ HEADERS  += displaywidget.h \
     widgetvideotargetmark.h \
     videoinput.h \
     targetmark.h \
+    version.h
 
 FORMS    += videotargetmark.ui
 
@@ -52,4 +53,4 @@ LIBS += \
 LIBS += -lwsock32
 
 # version.h
-FOO = $$system($$PWD/gen_version.sh $$PWD/build/version.h)
+FOO = $$system($$PWD/gen_version.sh $$PWD/version.h)
