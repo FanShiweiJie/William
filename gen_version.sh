@@ -1,4 +1,4 @@
-#/bin/sh
+#! /bin/bash
 
 # MUSY have 1 argument as output file path.
 if [ "$#" -ne 1 ]
@@ -27,8 +27,7 @@ exit 3
 fi
 
 let timestamp="`date +%s`%86400"
-
-printf -v AUTO_VERSION "`date +%g%m%d_`%05d" $timestamp
+AUTO_VERSION=`date +%g%m%d_`$timestamp
 
 GIT_VERSION=`git describe --tags --dirty`
 if [ $? -ne 0 ]

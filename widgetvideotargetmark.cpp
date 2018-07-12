@@ -4,7 +4,7 @@
 #include <QJsonArray>
 #include <QDebug>
 #include "widgetvideotargetmark.h"
-#include "version.h"
+#include "build/version.h"
 
 WidgetVideoTargetMark::WidgetVideoTargetMark(QWidget *parent) : QWidget(parent) {
     ui.setupUi( this );

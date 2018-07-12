@@ -1,0 +1,8 @@
+stages:
+    - build
+   
+run_build:
+    stage: build
+    script:
+        - build.bat
+
